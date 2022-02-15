@@ -10,6 +10,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ContactboxComponent } from './pages/contact/contactbox/contactbox.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ServicesComponent } from './pages/home/services/services.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +20,15 @@ import { ContactboxComponent } from './pages/contact/contactbox/contactbox.compo
     HomeComponent,
     AboutComponent,
     ContactComponent,
-    ContactboxComponent
+    ContactboxComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
 
   ],
   providers: [],
