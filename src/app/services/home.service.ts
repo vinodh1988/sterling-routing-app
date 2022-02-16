@@ -12,4 +12,8 @@ export class HomeService {
   getObject():Observable<object>{
     return this.http.get("http://localhost:4500/services")
   }
+
+  getDetails(id:number):Observable<object>{
+    return this.http.get("http://localhost:4500/details/"+id)
+  }
 }
