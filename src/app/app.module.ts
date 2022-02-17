@@ -14,7 +14,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ServicesComponent } from './pages/home/services/services.component';
 import { DetailsComponent } from './pages/home/services/details/details.component';
 import { FormComponent } from './pages/home/form/form.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FeedbackComponent } from './pages/about/feedback/feedback.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { FormsModule } from '@angular/forms';
     ContactboxComponent,
     ServicesComponent,
     DetailsComponent,
-    FormComponent
+    FormComponent,
+    FeedbackComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,8 @@ import { FormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     MaterialModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
 
   ],
   providers: [],

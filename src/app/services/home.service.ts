@@ -25,4 +25,13 @@ httpOptions:any;
     }
     return this.http.post("http://localhost:4500/enquiries",obj,this.httpOptions);
    }
+
+   postReviews(obj:any):Observable<object>{
+    this.httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type':  'application/json',
+      })
+    }
+    return this.http.post("http://localhost:4500/feedbacks",obj,this.httpOptions);
+   }
 }
