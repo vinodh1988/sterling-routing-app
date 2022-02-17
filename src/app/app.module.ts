@@ -13,6 +13,8 @@ import { ContactboxComponent } from './pages/contact/contactbox/contactbox.compo
 import { HttpClientModule } from '@angular/common/http';
 import { ServicesComponent } from './pages/home/services/services.component';
 import { DetailsComponent } from './pages/home/services/details/details.component';
+import { FormComponent } from './pages/home/form/form.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -24,14 +26,16 @@ import { DetailsComponent } from './pages/home/services/details/details.componen
     ContactComponent,
     ContactboxComponent,
     ServicesComponent,
-    DetailsComponent
+    DetailsComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
 
   ],
   providers: [],
