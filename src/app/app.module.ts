@@ -16,6 +16,8 @@ import { DetailsComponent } from './pages/home/services/details/details.componen
 import { FormComponent } from './pages/home/form/form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FeedbackComponent } from './pages/about/feedback/feedback.component';
+import { FeedbackBoxComponent } from './pages/about/feedback-box/feedback-box.component';
+import { FeedfilterPipe } from './pipes/feedfilter.pipe';
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import { FeedbackComponent } from './pages/about/feedback/feedback.component';
     ServicesComponent,
     DetailsComponent,
     FormComponent,
-    FeedbackComponent
+    FeedbackComponent,
+    FeedbackBoxComponent,
+    FeedfilterPipe
   ],
   imports: [
     BrowserModule,

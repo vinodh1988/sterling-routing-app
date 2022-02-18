@@ -17,6 +17,11 @@ httpOptions:any;
     return this.http.get("http://localhost:4500/details/"+id)
   }
 
+  
+  getFeedbacks():Observable<object>{
+    return this.http.get("http://localhost:4500/feedbacks")
+  }
+
   postEnquiry(obj:any):Observable<object>{
     this.httpOptions = {
       headers: new HttpHeaders({
